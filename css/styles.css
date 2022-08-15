@@ -17,6 +17,7 @@ body {
 
 span {
     color:#ff014f;
+    white-space: nowrap;
 }
 
 a {
@@ -80,7 +81,7 @@ nav li a:hover {
     transition: 0.4s;
 }
 
-nav li a.active {
+.active a {
     color: #e2e8ec;
     background-image: linear-gradient(145deg, #b40036, #ff014f);
 }
@@ -103,9 +104,9 @@ nav .menuBtn i {
 
 /* START HOME */
 .secHome {
+    padding: 120px 60px 60px 60px;
     background-color: #e2e8ec;
-    height: 100vh;
-    padding: 5%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -122,12 +123,12 @@ nav .menuBtn i {
 }
 
 .homeContent h1 {
-    font-size: calc(4.5vw);
+    font-size: 55px;
     margin-bottom: 10px;
 }
 
 .homeContent h2 {
-    font-size: calc(2.5vw);
+    font-size: 30px;
     letter-spacing: calc(0.5vw);
 }
 
@@ -165,36 +166,133 @@ nav .menuBtn i {
     object-fit: cover;
 }
 
-.homeRespon{
-    display: none;
-}
-
 /* START ABOUT */
 .secAbout {
+    padding: 120px 60px 60px 60px;
     border-top: 1px solid #ffffff;
-    height: 100vh;
+    height: auto;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.aboutImage{
+    flex-basis: 40%;
+}
+
+.aboutImage img{
+    width: 90%;
+    background-image: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.aboutContent {
+    flex-basis: 50%;
+    padding: 20px 0px;
+}
+
+.aboutContent h1 {
+    font-size: 45px;
+    margin: 40px 0px;
+}
+
+.aboutContent a {
+    color: #ff014f;
+    display: inline-block;
+    background-image: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    font-size: 20px;
+    margin: 40px 0px;
+    padding: 10px 25px;
+    border-radius: 4px;
+}
+
+.aboutContent a:hover {
+    color: #e2e8ec;
+    background-image: linear-gradient(145deg, #b40036, #ff014f);
+    scale: 1.1;
+    transition: 0.6s;
 }
 
 /* START SERVICES */
 .secServices {
+    padding: 120px 60px 60px 60px;
     border-top: 1px solid #ffffff;
-    height: 100vh;
-    display: flex;
+    height: auto;
 }
+
+.serviceText h1{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.servicesRow1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.servicesCol {
+    margin-bottom: 50px;
+    color: #ff014f;
+    flex-basis: 30%;
+    padding: 40px;
+    background-image: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    border-radius: 10px;
+}
+
+.servicesCol:hover {
+    color: #e2e8ec;
+    background-image: linear-gradient(145deg, #b40036, #ff014f);
+    padding-top: 20px;
+    transition: 0.6s;
+}
+
+.servicesCol i {
+    font-size: 50px;
+}
+
+.servicesCol h3{
+    color: #1e2125;
+    margin: 20px 0px;
+}
+
+.servicesCol p{
+    color: #1e2125;
+}
+
+.servicesRow2 {
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-between;
+}
+
 
 /* START SKILLS */
 .secSkills {
+    padding: 120px 60px 60px 60px;
     border-top: 2px solid #ffffff;
-    height: 100vh;
+    height: 635px;
     display: flex;
+}
+
+.skillsText h1{
+    font-size: 45px;
 }
 
 /* START CONTACT*/
 .secContact {
+    padding: 120px 60px 60px 60px;
     border-top: 1px solid #ffffff;
-    height: 100vh;
+    height: 635px;
     display: flex;
+}
+
+.contactText h1{
+    font-size: 45px;
 }
 
 /* START FOOTER */
@@ -255,7 +353,7 @@ footer p{
     }
 
     .secHome {
-        margin-top: 150px;
+        height: auto;
         display: flex;
         flex-direction: column-reverse;
         text-align: center;
@@ -263,6 +361,23 @@ footer p{
 
     .homeImage{
         margin-bottom: 10px;
+    }
+
+    .secAbout {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .servicesRow1, .servicesRow2 {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servicesCol{
+        margin-bottom: 50px;
     }
 }
 
