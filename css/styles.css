@@ -16,7 +16,7 @@ body {
 }
 
 span {
-    color:#ff014f;
+    color: #ff014f;
     white-space: nowrap;
 }
 
@@ -71,7 +71,7 @@ nav li a {
     border-radius: 4px;
     margin: 0px 10px;
     padding: 12px 20px;
-    
+
 }
 
 nav li a:hover {
@@ -99,7 +99,7 @@ nav .menuBtn i {
 
 #click {
     display: none;
-    
+
 }
 
 /* START HOME */
@@ -123,12 +123,11 @@ nav .menuBtn i {
 }
 
 .homeContent h1 {
-    font-size: 55px;
+    font-size: calc(4.4vw);
     margin-bottom: 10px;
 }
 
 .homeContent h2 {
-    font-size: 30px;
     letter-spacing: calc(0.5vw);
 }
 
@@ -143,7 +142,7 @@ nav .menuBtn i {
     background-image: linear-gradient(145deg, #e2e8ec, #ffffff);
     box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
     font-size: 20px;
-    margin: 20px 10px 0px 10px;
+    margin: 20px 10px 0px 0px;
     padding: 15px 20px;
     border-radius: 4px;
 }
@@ -151,7 +150,7 @@ nav .menuBtn i {
 .contactBox a:hover {
     color: #e2e8ec;
     background-image: linear-gradient(145deg, #b40036, #ff014f);
-    scale: 1.2;
+    scale: 1.1;
     transition: 0.6s;
 }
 
@@ -159,7 +158,8 @@ nav .menuBtn i {
     flex-basis: 30%;
 }
 
-.homeImage img{
+.homeImage img {
+    width: 90%;
     background-image: linear-gradient(145deg, #e2e8ec, #ffffff);
     box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
     border-radius: 10px;
@@ -175,11 +175,12 @@ nav .menuBtn i {
     flex-direction: row;
     justify-content: space-between
 }
-.aboutImage{
+
+.aboutImage {
     flex-basis: 40%;
 }
 
-.aboutImage img{
+.aboutImage img {
     width: 90%;
     background-image: linear-gradient(145deg, #e2e8ec, #ffffff);
     box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
@@ -193,7 +194,7 @@ nav .menuBtn i {
 }
 
 .aboutContent h1 {
-    font-size: 45px;
+    font-size: 35px;
     margin: 40px 0px;
 }
 
@@ -222,8 +223,8 @@ nav .menuBtn i {
     height: auto;
 }
 
-.serviceText h1{
-    font-size: 45px;
+.serviceText h1 {
+    font-size: 35px;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -255,12 +256,12 @@ nav .menuBtn i {
     font-size: 50px;
 }
 
-.servicesCol h3{
+.servicesCol h3 {
     color: #1e2125;
     margin: 20px 0px;
 }
 
-.servicesCol p{
+.servicesCol p {
     color: #1e2125;
 }
 
@@ -279,8 +280,8 @@ nav .menuBtn i {
     display: flex;
 }
 
-.skillsText h1{
-    font-size: 45px;
+.skillsText h1 {
+    font-size: 35px;
 }
 
 /* START CONTACT*/
@@ -291,8 +292,8 @@ nav .menuBtn i {
     display: flex;
 }
 
-.contactText h1{
-    font-size: 45px;
+.contactText h1 {
+    font-size: 35px;
 }
 
 /* START FOOTER */
@@ -302,7 +303,7 @@ Footer {
     text-align: center;
 }
 
-Footer  img {
+Footer img {
     background-image: linear-gradient(145deg, #e2e8ec, #ffffff);
     box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
     border: 1px solid #ffffff;
@@ -311,13 +312,26 @@ Footer  img {
     width: 80px;
 }
 
-footer p{
+footer p {
     margin: 20px;
 }
 
 /* MEDIA QUERY FOR RESPONSIVE */
 
 @media (max-width: 940px) {
+
+    .homeContent h1 {
+        font-size: 35px;
+    }
+
+    .homeContent h2 {
+        font-size: 20px;
+    }
+
+    .contactBox a {
+        white-space: nowrap;
+        padding: 6px 8px;
+    }
 
     nav .menuBtn i {
         display: block;
@@ -359,7 +373,7 @@ footer p{
         text-align: center;
     }
 
-    .homeImage{
+    .homeImage {
         margin-bottom: 10px;
     }
 
@@ -370,17 +384,16 @@ footer p{
         text-align: center;
     }
 
-    .servicesRow1, .servicesRow2 {
+    .servicesRow1,
+    .servicesRow2 {
         height: auto;
         display: flex;
         flex-direction: column;
     }
 
-    .servicesCol{
+    .servicesCol {
         margin-bottom: 50px;
     }
 }
 
-@media (max-width: 425px) {
-
-}
+@media (max-width: 425px) {}
