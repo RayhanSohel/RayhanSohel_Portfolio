@@ -2,40 +2,50 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RayhanSohel</title>
-    <link rel="shortcut icon" href="images/logo.png">
+    <title>Rayhan Portfolio</title>
+    <link class="titleLogo" rel="shortcut icon" href="images/title-logo.png">
     <!-- FONTAWESOME LINK -->
     <script src="https://kit.fontawesome.com/6458e58e7a.js" crossorigin="anonymous"></script>
     <!-- CUSTOM CSS LINK -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- RESPONSIVE CSS LINK -->
+    <link rel="stylesheet" href="css/responsive.css">
+    
 </head>
 
 <body>
 
     <!-- NAVBAR START-->
-    <nav>
+    <header>
+
         <div class="navTitle">
             <div class="navLogo">
                 <a href="#"><img src="images/logo.png" alt="Logo Image"></a>
             </div>
             <h3>Portfo<span>lio</span></h3>
         </div>
-        <input type="checkbox" id="click">
-        <label for="click" class="menuBtn"><i class="fa-solid fa-bars"></i></label>
-        <ul>
-            <li class="links"><a href="#home">Home</a></li>
-            <li class="links"><a href="#about">About</a></li>
-            <li class="links"><a href="#services">Services</a></li>
-            <li class="links"><a href="#skills">Skills</a></li>
-            <li class="links"><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+
+        <div class="navBar">
+            <input type="checkbox" id="click">
+            <label for="click" class="menuBtn"><i class="fa-solid fa-bars"></i></label>
+            <ul>
+                <li class="links"><a href="#home">Home</a></li>
+                <li class="links"><a href="#about">About</a></li>
+                <li class="links"><a href="#services">Services</a></li>
+                <li class="links"><a href="#skills">Skills</a></li>
+                <li class="links"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </header>
 
     <!-- HOME START -->
     <section class="secHome" id="home">
+
         <div class="homeContent">
             <p class="homeWell">Wellcome to my world</p>
             <h1>Hi, I'm <span>Rayhan Sohel</span></h1>
@@ -49,29 +59,36 @@
                 <a href="mailto:abdurrayhansohel@gmail.com" target="blank"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
+
         <div class="homeImage">
             <img src="images\home.png" alt="Home Image">
         </div>
+
     </section>
 
     <!-- ABOUT START-->
     <section class="secAbout" id="about">
+
         <div class="aboutImage">
             <img src="images\about.png" alt="Home Image">
         </div>
+
         <div class="aboutContent">
             <h1>About <span>Me</span></h1>
             <h2></h2>
             <p>I am a responsive web designer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations. A responsive design makes your website accessible to all users, regardless of their device.</p>
             <a href="mailto:abdurrayhansohel@gmail.com" target="blank">Lets Talk</a>
         </div>
+
     </section>
 
     <!-- SERVICES START-->
     <section class="secServices" id="services">
+        
         <div class="serviceText">
             <h1><span>My </span> Services</h1>
         </div>
+
         <div class="servicesRow1">
             <div class="servicesCol">
                 <i class="fa-solid fa-window-restore"></i>
@@ -83,7 +100,7 @@
                 <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore alias quos ratione facilis deleniti nihil officia quo a reiciendis praesentium.</p>
             </div>
-            <div class="servicesCol">
+            <div class="servicesCol" id="serviceColtab">
                 <i class="fa-solid fa-brush"></i>
                 <h3>UX/UI Design</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsum rem accusantium? Facere dolor provident explicabo iusto, qui minima sit!</p>
@@ -101,40 +118,50 @@
                 <h3>App Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati beatae incidunt quo dolorum nam iusto perferendis molestiae blanditiis iure voluptatum.</p>
             </div>
-            <div class="servicesCol">
+            <div class="servicesCol" id="serviceColtab">
                 <i class="fa-solid fa-paint-roller"></i>
                 <h3>Graphics Design</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis natus nulla porro quia deserunt, ea cumque! Fuga nostrum libero ducimus?</p>
             </div>
         </div>
+
     </section>
 
     <!-- SKILLS START-->
     <section class="secSkills" id="skills">
+
         <div class="skillsText">
             <h1><span>My </span> Skills</h1>
         </div>
+
     </section>
 
     <!-- CONTACT START-->
     <section class="secContact" id="contact">
+
         <div class="contactText">
             <h1>Contact with<span> Me</span></h1>
         </div>
+
     </section>
 
     <!-- FOOTER START-->
-        <footer>
-            <a href="#home"><img src="images/logo.png" alt="Logo Image"></a>
-            <div class="contactBox">
-                <a href="https://www.linkedin.com/in/md-abdur-rayhan-57596859/" target="blank"><i
-                        class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/RayhanSohel" target="blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://twitter.com/ARayhanSohel" target="blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="mailto:abdurrayhansohel@gmail.com" target="blank"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-            <p>&copy; 2022. All rights reserved by "<span>Rayhan Sohel</span>"</p>
-        </footer>
+    <footer>
+
+        <a href="#home"><img src="images/logo.png" alt="Logo Image"></a>
+
+        <div class="contactBox">
+            <a href="https://www.linkedin.com/in/md-abdur-rayhan-57596859/" target="blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/RayhanSohel" target="blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/ARayhanSohel" target="blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="mailto:abdurrayhansohel@gmail.com" target="blank"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+        <p>&copy; 2022. All rights reserved by "Rayhan Sohel"</p>
+
+    </footer>
+
 </body>
 <!-- CUSTOM JS LINK -->
 <script type="text/javascript" src="/js/main.js"></script>

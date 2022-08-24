@@ -1,7 +1,6 @@
 /* GOOGLE FONT LINK */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Cuprum:wght@400;700&family=Poppins&family=Roboto&family=Ubuntu:wght@400;700&family=Varela+Round&display=swap');
 
-
 * {
     padding: 0;
     margin: 0;
@@ -11,8 +10,8 @@
 }
 
 body {
-    color: #1e2125;
-    background-color: #e2e8ec;
+    color: #8e99aa;
+    background-color: #212428;
 }
 
 span {
@@ -21,78 +20,70 @@ span {
 }
 
 a {
-    color: #1e2125;
+    color: #abcaf377;
     text-decoration: none;
 }
 
 /* START NAVBAR */
-nav {
-    height: 100px;
-    background-color: #e2e8ec;
-    box-shadow: 5px 5px 15px #D1D9E6;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5% 0 5%;
-    position: sticky;
-    top: 0;
+    padding: 10px 60px;
+    transition: background-color 0.5s ease;
+    backdrop-filter: blur(10px);
+    background: #212428a1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .navLogo img {
-    background-image: linear-gradient(145deg, #e2e8ec, #ffffff);
-    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-    border: 1px solid #ffffff;
+    box-shadow: #0b0c0e 0px 5px 15px -5px inset, #0b0c0e 0px 5px 15px -5px inset;
     border-radius: 50%;
-    margin-top: 6px;
     width: 50px;
 }
 
-nav .navTitle {
+.navTitle {
     display: flex;
     align-items: center;
 }
 
-nav h3 {
+.navTitle h3 {
     padding-left: 10px;
     letter-spacing: 10px;
+    font-weight: lighter;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
+.navBar li {
+    display: inline-block;
+    font-weight: lighter;
 }
 
-nav li a {
+.navBar li a {
     text-transform: uppercase;
     font-size: 13px;
-    letter-spacing: 2px;
-    background-image: linear-gradient(145deg, #e2e8ec, #ffffff);
-    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-    border-radius: 4px;
-    margin: 0px 10px;
-    padding: 12px 20px;
-
+    letter-spacing: 4px;
+    padding: 0px 20px;
 }
 
-nav li a:hover {
-    color: #e2e8ec;
-    background-image: linear-gradient(145deg, #b40036, #ff014f);
-
+.navBar li a:hover {
+    color: #ff014f;
     transition: 0.4s;
 }
 
 .active a {
-    color: #e2e8ec;
-    background-image: linear-gradient(145deg, #b40036, #ff014f);
+    color: #ff014f;
+    font-weight: bold;
 }
 
-/* MENU BUTTON FOR MOBILE */
-nav .menuBtn i {
-    background-image: linear-gradient(145deg, #e2e8ec, #ffffff);
-    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-    border-radius: 4px;
-    padding: 8px 10px;
+/* MENU BUTTON FOR RESPONSIVE */
+.menuBtn i {
     color: #ff014f;
+    font-size: 25px;
     cursor: pointer;
     display: none;
 }
@@ -104,76 +95,77 @@ nav .menuBtn i {
 
 /* START HOME */
 .secHome {
-    padding: 120px 60px 60px 60px;
-    background-color: #e2e8ec;
-    height: auto;
+    padding: 100px 0px 30px 0px;
+    margin: 0px 80px;
+    border-bottom: 1px solid #000000;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .homeContent {
-    flex-basis: 50%;
+    margin-top: 30px;
+    flex-basis: 55%;
 }
 
 .homeWell {
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .homeContent h1 {
-    font-size: calc(4.4vw);
-    margin-bottom: 10px;
+    font-size: 60px;
+    margin-bottom: 15px;
 }
 
 .homeContent h2 {
-    letter-spacing: calc(0.5vw);
+    letter-spacing: 3px;
 }
 
 .HomeSum {
     line-height: 26px;
-    margin: 30px 0px 50px 0px;
+    margin: 30px 0px 70px 0px;
 }
 
 .contactBox a {
     color: #ff014f;
     display: inline-block;
-    background-image: linear-gradient(145deg, #e2e8ec, #ffffff);
-    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-    font-size: 20px;
-    margin: 20px 10px 0px 0px;
-    padding: 15px 20px;
-    border-radius: 4px;
+    box-shadow: #0b0c0e 0px 5px 15px -5px inset, #0b0c0e 0px 5px 15px -5px inset;
+    font-size: 30px;
+    margin: 0px 15px;
+    padding: 12px 16px;
+    border-radius: 10px;
 }
 
 .contactBox a:hover {
-    color: #e2e8ec;
-    background-image: linear-gradient(145deg, #b40036, #ff014f);
+    color: #0b0c0e;
+    background-image: linear-gradient(145deg, #8a173a, #ff014f);
     scale: 1.1;
-    transition: 0.6s;
+    transition: 0.4s;
 }
 
 .homeImage {
     flex-basis: 30%;
+    text-align: center;
 }
 
 .homeImage img {
-    width: 90%;
-    background-image: linear-gradient(145deg, #e2e8ec, #ffffff);
-    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-    border-radius: 10px;
-    object-fit: cover;
+    height: 100%;
+    box-shadow: #0b0c0e 0px 30px 60px -12px inset, #0b0c0e 0px 30px 60px -18px inset;
+    border-radius: 20px;
 }
 
 /* START ABOUT */
 .secAbout {
-    padding: 120px 60px 60px 60px;
-    border-top: 1px solid #ffffff;
-    height: auto;
+    padding: 100px 0px 30px 0px;
+    margin: 0px 80px;
+    border-bottom: 1px solid #000000;
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .aboutImage {
@@ -181,75 +173,76 @@ nav .menuBtn i {
 }
 
 .aboutImage img {
-    width: 90%;
-    background-image: linear-gradient(145deg, #e2e8ec, #ffffff);
-    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-    border-radius: 10px;
-    object-fit: cover;
+    height: 100%;
+    box-shadow: #0b0c0e 0px 30px 60px -12px inset, #0b0c0e 0px 30px 60px -18px inset;
+    border-radius: 20px;
 }
 
 .aboutContent {
     flex-basis: 50%;
-    padding: 20px 0px;
 }
 
 .aboutContent h1 {
-    font-size: 35px;
+    font-size: 60px;
     margin: 40px 0px;
+}
+
+.aboutContent p {
+    line-height: 26px;
+    text-align: justify;
 }
 
 .aboutContent a {
     color: #ff014f;
     display: inline-block;
-    background-image: linear-gradient(145deg, #e2e8ec, #ffffff);
-    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    box-shadow: #0b0c0e 0px 5px 15px -5px inset, #0b0c0e 0px 5px 15px -5px inset;
     font-size: 20px;
     margin: 40px 0px;
     padding: 10px 25px;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .aboutContent a:hover {
-    color: #e2e8ec;
-    background-image: linear-gradient(145deg, #b40036, #ff014f);
+    color: #0b0c0e;
+    background-image: linear-gradient(145deg, #8a173a, #ff014f);
     scale: 1.1;
-    transition: 0.6s;
+    transition: 0.4s;
 }
 
 /* START SERVICES */
 .secServices {
-    padding: 120px 60px 60px 60px;
-    border-top: 1px solid #ffffff;
+    padding: 100px 0px 30px 0px;
+    margin: 0px 80px;
+    border-bottom: 1px solid #000000;
     height: auto;
 }
 
 .serviceText h1 {
-    font-size: 35px;
+    font-size: 60px;
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .servicesRow1 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .servicesCol {
-    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 50px;
     color: #ff014f;
     flex-basis: 30%;
-    padding: 40px;
-    background-image: linear-gradient(145deg, #e2e8ec, #ffffff);
-    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-    border-radius: 10px;
+    padding: 50px;
+    box-shadow: #0b0c0e 0px 20px 30px -12px inset, #0b0c0e 0px 20px 30px -18px inset;
+    border-radius: 20px;
 }
 
 .servicesCol:hover {
-    color: #e2e8ec;
+    color: #0b0c0e;
     background-image: linear-gradient(145deg, #b40036, #ff014f);
-    padding-top: 20px;
-    transition: 0.6s;
+    scale: 1.03;
+    transition: 0.4s;
 }
 
 .servicesCol i {
@@ -257,12 +250,13 @@ nav .menuBtn i {
 }
 
 .servicesCol h3 {
-    color: #1e2125;
+    color: #c4cfde;
     margin: 20px 0px;
 }
 
 .servicesCol p {
-    color: #1e2125;
+    color: #c4cfde;
+    line-height: 26px;
 }
 
 .servicesRow2 {
@@ -274,126 +268,43 @@ nav .menuBtn i {
 
 /* START SKILLS */
 .secSkills {
-    padding: 120px 60px 60px 60px;
-    border-top: 2px solid #ffffff;
-    height: 635px;
-    display: flex;
+    padding: 100px 0px 30px 0px;
+    border-bottom: 1px solid #000000;
+    margin: 0px 80px;
+    height: 100vh;
+    text-align: center;
 }
 
 .skillsText h1 {
-    font-size: 35px;
+    font-size: 60px;
 }
 
 /* START CONTACT*/
 .secContact {
-    padding: 120px 60px 60px 60px;
-    border-top: 1px solid #ffffff;
-    height: 635px;
-    display: flex;
+    padding: 100px 0px 30px 0px;
+    border-bottom: 1px solid #000000;
+    margin: 0px 80px;
+    height: 100vh;
+    text-align: center;
 }
 
 .contactText h1 {
-    font-size: 35px;
+    font-size: 60px;
 }
 
 /* START FOOTER */
 Footer {
-    border-top: 1px solid #ffffff;
     height: 250px;
     text-align: center;
 }
 
 Footer img {
-    background-image: linear-gradient(145deg, #e2e8ec, #ffffff);
-    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-    border: 1px solid #ffffff;
+    box-shadow: #0b0c0e 0px 5px 15px -5px inset, #0b0c0e 0px 5px 15px -5px inset;
     border-radius: 50%;
     margin: 20px;
-    width: 80px;
+    width: 100px;
 }
 
 footer p {
     margin: 20px;
 }
-
-/* MEDIA QUERY FOR RESPONSIVE */
-
-@media (max-width: 940px) {
-
-    .homeContent h1 {
-        font-size: 35px;
-    }
-
-    .homeContent h2 {
-        font-size: 20px;
-    }
-
-    .contactBox a {
-        white-space: nowrap;
-        padding: 6px 8px;
-    }
-
-    nav .menuBtn i {
-        display: block;
-    }
-
-    #click:checked~.menuBtn i:before {
-        content: "\f00d";
-    }
-
-    nav ul {
-        padding: 20px;
-        background-color: #e2e8ec;
-        box-shadow: 5px 5px 15px #D1D9E6;
-        position: fixed;
-        top: 100px;
-        left: -50%;
-        display: block;
-        text-align: center;
-        transition: 0.8s;
-    }
-
-    #click:checked~ul {
-        left: 0;
-    }
-
-    nav li {
-        margin: 30px 0px;
-    }
-
-    nav li a {
-        display: block;
-        line-height: 20px;
-    }
-
-    .secHome {
-        height: auto;
-        display: flex;
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .homeImage {
-        margin-bottom: 10px;
-    }
-
-    .secAbout {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .servicesRow1,
-    .servicesRow2 {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .servicesCol {
-        margin-bottom: 50px;
-    }
-}
-
-@media (max-width: 425px) {}
