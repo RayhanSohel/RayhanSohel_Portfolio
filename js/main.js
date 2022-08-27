@@ -1,3 +1,4 @@
+// MENU AUTO CHANGE //
 let section = document.querySelectorAll('section');
 let lists = document.querySelectorAll('.links');
 function activeLink(li) {
