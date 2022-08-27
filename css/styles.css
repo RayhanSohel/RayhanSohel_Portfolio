@@ -10,12 +10,12 @@
 }
 
 body {
-    color: #c4cfde;
+    color: #ffffff;
     background-color: #1e2125;
 }
 
 span {
-    color: #ff0055;
+    color: #fd0847;
     white-space: nowrap;
 }
 
@@ -42,7 +42,7 @@ header {
 }
 
 .navLogo img {
-    width: 150px;
+    width: 200px;
 }
 
 .navTitle {
@@ -69,18 +69,18 @@ header {
 }
 
 .navBar li a:hover {
-    color: #ff0055;
+    color: #fd0847;
     transition: 0.4s;
 }
 
 .active a {
-    color: #ff0055;
+    color: #fd0847;
     font-weight: bold;
 }
 
 /* MENU BUTTON FOR RESPONSIVE */
 .menuBtn i {
-    color: #ff0055;
+    color: ##fd0847;
     font-size: 25px;
     cursor: pointer;
     display: none;
@@ -138,13 +138,13 @@ header {
     margin: 10px;
 }
 .contactBox li:hover {
-    background-image: linear-gradient(145deg, #8a173a, #ff0055);
+    background-image: linear-gradient(145deg, #8a173a, ##fd0847);
     scale: 1.1;
     transition: 0.4s;
 }
 
 .contactBox a {
-    color: #ff0055;
+    color: #fd0847;
     display: inline-block;
     font-size: 30px;
     padding: 12px 16px;
@@ -201,7 +201,7 @@ header {
 }
 
 .aboutContent a {
-    color: #ff0055;
+    color: #fd0847;
     display: inline-block;
     background-image: linear-gradient(145deg, #121416, #23272b);
     box-shadow:10px 10px 10px #1c1e22, -10px -10px 10px #1c1e22;
@@ -213,7 +213,7 @@ header {
 
 .aboutContent a:hover {
     color: #0b0c0e;
-    background-image: linear-gradient(145deg, #8a173a, #ff0055);
+    background-image: linear-gradient(145deg, #8a173a, #fd0847);
     scale: 1.1;
     transition: 0.4s;
 }
@@ -239,7 +239,7 @@ header {
 
 .servicesCol {
     margin-top: 50px;
-    color: #ff0055;
+    color: #fd0847;
     flex-basis: 30%;
     padding: 50px;
     background-image: linear-gradient(145deg, #1b1d20, #23272b);
@@ -301,12 +301,12 @@ header {
 
 /* START FOOTER */
 Footer {
-    height: 250px;
+    height: 280px;
     text-align: center;
 }
 
 Footer img {
-    width: 150px;
+    width: 200px;
     margin: 35px;
 }
 
