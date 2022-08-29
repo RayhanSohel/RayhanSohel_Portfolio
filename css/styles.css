@@ -10,7 +10,7 @@
 }
 
 body {
-    color: #ffffff;
+    color: #dcdcdc;
     background-color: #1e2125;
 }
 
@@ -20,7 +20,7 @@ span {
 }
 
 a {
-    color: #c4cfde;
+    color: #dcdcdc;
     text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ header {
     padding: 10px 60px;
     transition: background-color 0.5s ease;
     backdrop-filter: blur(5px);
-    background-color: #1e212590;
+    background-color: #1e212550;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -80,7 +80,7 @@ header {
 
 /* MENU BUTTON FOR RESPONSIVE */
 .menuBtn i {
-    color: ##fd0847;
+    color: #fd0847;
     font-size: 25px;
     cursor: pointer;
     display: none;
@@ -137,8 +137,9 @@ header {
     border-radius: 10px;
     margin: 10px;
 }
+
 .contactBox li:hover {
-    background-image: linear-gradient(145deg, #8a173a, ##fd0847);
+    background-image: linear-gradient(145deg, #8a173a, #fd0847);
     scale: 1.1;
     transition: 0.4s;
 }
@@ -239,31 +240,43 @@ header {
 
 .servicesCol {
     margin-top: 50px;
-    color: #fd0847;
     flex-basis: 30%;
-    padding: 50px;
+    padding: 30px;
+    text-align: center;
     background-image: linear-gradient(145deg, #1b1d20, #23272b);
     box-shadow:10px 10px 10px #1c1e22, -10px -10px 10px #1c1e22;
     border-radius: 15px;
 }
 
 .servicesCol i {
+    color: #fd0847;
     font-size: 50px;
 }
 
-.servicesCol i:hover {
-    scale: 1.5;
-    transition: 0.6s;
-}
-
 .servicesCol h3 {
-    color: #c4cfde;
     margin: 20px 0px;
 }
 
 .servicesCol p {
-    color: #c4cfde;
     line-height: 26px;
+}
+
+.servicesCol a{
+    color: #fd0847;
+    display: inline-block;
+    background-image: linear-gradient(145deg, #121416, #23272b);
+    box-shadow:10px 10px 10px #1c1e22, -10px -10px 10px #1c1e22;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px 25px;
+}
+
+.servicesCol a:hover {
+    color: #0b0c0e;
+    background-image: linear-gradient(145deg, #8a173a, #fd0847);
+    scale: 1.1;
+    transition: 0.4s;
 }
 
 .servicesRow2 {
@@ -286,6 +299,19 @@ header {
     font-size: 60px;
 }
 
+.skillsRow{
+    display: flex;
+    flex-wrap: row;
+}
+
+.skillsCol1{
+    flex-basis: 48%;
+}
+
+.skillsCol2{
+    flex-basis: 48%;
+}
+
 /* START CONTACT*/
 .secContact {
     padding: 100px 0px 30px 0px;
@@ -295,7 +321,7 @@ header {
     text-align: center;
 }
 
-.contactText h1 {
+.contactTitle h1 {
     font-size: 60px;
 }
 
