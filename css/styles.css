@@ -37,8 +37,8 @@ header {
     padding: 10px 60px;
     transition: background-color 0.5s ease;
     backdrop-filter: blur(5px);
-    background-color: #1e212580;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #1e2125ea;
+    box-shadow: #00000030 0px 5px 15px;
 }
 
 .navLogo img {
@@ -70,7 +70,7 @@ header {
 }
 
 .navBar li a:hover {
-    color: #999999;
+    color: #fd0847;
 }
 
 .active a {
@@ -134,7 +134,7 @@ header {
     height: 60px;
     background-image: linear-gradient(145deg, #121416, #23272b);
     box-shadow: #0b0c0e 0px 5px 15px -5px, #0b0c0e 0px 5px 15px -5px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 10px;
     transition: 0.3s ease 0.1s;
 }
@@ -162,8 +162,8 @@ header {
 
 .homeImage img {
     height: 100%;
-    box-shadow: #0b0c0e 0px 30px 60px -12px, #0b0c0e 0px 30px 60px -18px;
-    border-radius: 20px;
+    box-shadow: #0b0c0e 0px 5px 15px -5px, #0b0c0e 0px 5px 15px -5px;
+    border-radius: 5px;
 }
 
 /* START ABOUT */
@@ -183,8 +183,8 @@ header {
 
 .aboutImage img {
     height: 100%;
-    box-shadow: #0b0c0e 0px 30px 60px -12px, #0b0c0e 0px 30px 60px -18px;
-    border-radius: 20px;
+    box-shadow: #0b0c0e 0px 5px 15px -5px, #0b0c0e 0px 5px 15px -5px;
+    border-radius: 5px;
 }
 
 .aboutContent {
@@ -206,7 +206,7 @@ header {
     display: inline-block;
     background-image: linear-gradient(145deg, #121416, #23272b);
     box-shadow: #0b0c0e 0px 5px 15px -5px, #0b0c0e 0px 5px 15px -5px;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 20px;
     margin: 40px 0px;
     padding: 10px 25px;
