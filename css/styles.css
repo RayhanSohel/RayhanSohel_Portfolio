@@ -27,8 +27,8 @@ a {
 /* START NAVBAR */
 header {
     position: fixed;
+    z-index: 100;
     top: 0;
-    left: 0;
     width: 100%;
     height: 80px;
     display: flex;
@@ -37,7 +37,7 @@ header {
     padding: 10px 60px;
     transition: background-color 0.5s ease;
     backdrop-filter: blur(5px);
-    background-color: #1e212550;
+    background-color: #1e212580;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -66,11 +66,11 @@ header {
     font-size: 13px;
     letter-spacing: 4px;
     padding: 0px 20px;
+    transition: 0.3s ease 0.1s;
 }
 
 .navBar li a:hover {
-    color: #fd0847;
-    transition: 0.4s;
+    color: #999999;
 }
 
 .active a {
@@ -136,12 +136,12 @@ header {
     box-shadow: #0b0c0e 0px 5px 15px -5px, #0b0c0e 0px 5px 15px -5px;
     border-radius: 10px;
     margin: 10px;
+    transition: 0.3s ease 0.1s;
 }
 
 .contactBox li:hover {
-    background-image: linear-gradient(145deg, #8a173a, #fd0847);
-    scale: 1.1;
-    transition: 0.4s;
+    background-image: linear-gradient(145deg, #1f060d, #fd0847);
+    transform: scale(1.1);
 }
 
 .contactBox a {
@@ -152,7 +152,7 @@ header {
 }
 
 .contactBox a:hover {
-    color: #0b0c0e;
+    color: #1e2125;
 }
 
 .homeImage {
@@ -205,18 +205,18 @@ header {
     color: #fd0847;
     display: inline-block;
     background-image: linear-gradient(145deg, #121416, #23272b);
-    box-shadow:10px 10px 10px #1c1e22, -10px -10px 10px #1c1e22;
+    box-shadow: #0b0c0e 0px 5px 15px -5px, #0b0c0e 0px 5px 15px -5px;
     border-radius: 10px;
     font-size: 20px;
     margin: 40px 0px;
     padding: 10px 25px;
+    transition: 0.3s ease 0.1s;
 }
 
 .aboutContent a:hover {
-    color: #0b0c0e;
-    background-image: linear-gradient(145deg, #8a173a, #fd0847);
-    scale: 1.1;
-    transition: 0.4s;
+    color: #000000;
+    background-image: linear-gradient(145deg, #1f060d, #fd0847);
+    transform: scale(1.05);
 }
 
 /* START SERVICES */
@@ -243,9 +243,15 @@ header {
     flex-basis: 30%;
     padding: 30px;
     text-align: center;
-    background-image: linear-gradient(145deg, #1b1d20, #23272b);
     box-shadow:10px 10px 10px #1c1e22, -10px -10px 10px #1c1e22;
     border-radius: 15px;
+    transition: 0.3s ease 0.1s;
+    
+}
+
+.servicesCol:hover {
+    box-shadow: #fd0845 0px 0px 10px 0px, #fd084515 0px 0px 5px 15px;
+    transform: scale(1.02);
 }
 
 .servicesCol i {
@@ -253,30 +259,28 @@ header {
     font-size: 50px;
 }
 
+.next i{
+    color: #fd0845;
+    font-size: 30px;
+    opacity: 0;
+    transition: 0.3s ease 0.1s;
+}
+
+.next:hover i{
+    transform: scale(1.5);
+   }
+
+.servicesCol:hover .next i{
+    opacity: 1;
+}
+
 .servicesCol h3 {
-    margin: 20px 0px;
+    margin: 30px 0px;
 }
 
 .servicesCol p {
     line-height: 26px;
-}
-
-.servicesCol a{
-    color: #fd0847;
-    display: inline-block;
-    background-image: linear-gradient(145deg, #121416, #23272b);
-    box-shadow:10px 10px 10px #1c1e22, -10px -10px 10px #1c1e22;
-    border-radius: 10px;
-    font-size: 20px;
-    margin-top: 20px;
-    padding: 10px 25px;
-}
-
-.servicesCol a:hover {
-    color: #0b0c0e;
-    background-image: linear-gradient(145deg, #8a173a, #fd0847);
-    scale: 1.1;
-    transition: 0.4s;
+    margin-bottom: 20px;
 }
 
 .servicesRow2 {
@@ -327,13 +331,13 @@ header {
 
 /* START FOOTER */
 Footer {
-    height: 280px;
+    height: auto;
     text-align: center;
 }
 
 Footer img {
     width: 200px;
-    margin: 35px;
+    margin: 20px;
 }
 
 footer p {
