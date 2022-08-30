@@ -1,10 +1,12 @@
-// MENU AUTO CHANGE //
+// NAV MENU AUTO CHANGE //
+
 let section = document.querySelectorAll('section');
 let lists = document.querySelectorAll('.links');
 function activeLink(li) {
     lists.forEach((item) => item.classList.remove('active'));
     li.classList.add('active');
 }
+
 lists.forEach((item) =>
     item.addEventListener('click', function(){
         activeLink(this);
@@ -16,10 +18,9 @@ window.onscroll = () => {
         let offset = sec.offsetTop;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
-
-        if (top >= offset && top < offset + height) {
+        if (top >= (offset - height / 3) && top < offset + height / 3) {
             const target = document.querySelector(`[href='#${id}']`).parentElement;
             activeLink(target);
         }
     })
-};
+}
