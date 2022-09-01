@@ -290,13 +290,13 @@ header {
     margin-bottom: 30px;
 }
 
-.skillsRow{
+.skillsRow {
     display: flex;
     flex-direction: row;
     justify-content: space-between;;
 }
 
-.skillsCol{
+.skillsCol {
     flex-basis: 48%;
     padding: 30px;
     box-shadow:10px 10px 10px #1c1e22, -10px -10px 10px #1c1e22;
