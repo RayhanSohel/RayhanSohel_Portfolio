@@ -95,8 +95,7 @@
         object-position: top;
     }
 
-    .secAbout,
-    .skillsRow {
+    .secAbout {
         display: block;
         flex-direction: column;
         text-align: center;
@@ -109,6 +108,11 @@
 
     #serviceColtab {
         flex-basis: 100%;
+    }
+
+    .skillsRow {
+        display: block;
+        flex-direction: column;
     }
 
     .skillsCol{
