@@ -1,5 +1,10 @@
-// NAV MENU AUTO CHANGE //
 
+// PRELOADER //
+window.onload = function(){
+    document.querySelector(".preloader").style.display = "none";
+}
+
+// NAV MENU AUTO CHANGE //
 let section = document.querySelectorAll('section');
 let lists = document.querySelectorAll('.links');
 function activeLink(li) {
@@ -24,3 +29,5 @@ window.onscroll = () => {
         }
     })
 }
+
+
