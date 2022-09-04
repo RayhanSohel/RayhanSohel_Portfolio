@@ -77,6 +77,7 @@
         left: -50%;
         text-align: center;
         transition: 0.8s;
+        border-radius: 0 0 5px 0;
     }
 
     #click:checked~ul {

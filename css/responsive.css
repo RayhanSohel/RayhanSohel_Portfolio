@@ -1,8 +1,5 @@
 /* DESKTOP VIEW */
-@media (max-width: 1200px) {
-
-
-}
+@media (max-width: 1200px) {}
 
 /* LAPTOP VIEW */
 @media (max-width: 1024px) {
@@ -39,7 +36,7 @@
         object-position: top;
     }
 
-    .contactPerson h1{
+    .contactPerson h1 {
         font-size: 25px;
     }
 
@@ -77,6 +74,7 @@
         left: -50%;
         text-align: center;
         transition: 0.8s;
+        border-radius: 0 0 5px 0;
     }
 
     #click:checked~ul {
@@ -114,15 +112,15 @@
         flex-direction: column;
     }
 
-    .skillsCol{
+    .skillsCol {
         margin-top: 30px;
     }
 
-    .contactRow{
+    .contactRow {
         flex-direction: column;
     }
 
-    .contactCol2{
+    .contactCol2 {
         margin-top: 20px;
     }
 }
@@ -147,7 +145,7 @@
         display: block;
     }
 
-    .contactPerson h1{
+    .contactPerson h1 {
         font-size: 30px;
     }
 
